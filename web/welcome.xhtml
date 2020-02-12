@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+
+
+<ui:include src="header.xhtml" />
+<h:outputScript library="js" name="jquery-3.4.1.min.js"/>
+<h:body>
+
+    <h:outputStylesheet library="css" value="dark.css"/>
+
+    <h:graphicImage id="hello-cat" value="resources/img/cat.jpg" style="width: 420px; height: 550px;" styleClass="absolute-center" onclick="fade()"/>
+
+    <div id="header" class="welcome-info">
+        <span class="header-content">Студент: Жолдошов Хансултан || Группа: P3211 || Вариант: 45845</span>
+    </div>
+
+    <div id="workspace-container" class="welcome-info">
+
+        <div class="workspace-item-container">
+            <h:graphicImage value="resources/img/areas3.png" styleClass="img"/>
+        </div>
+
+        <div class="workspace-item-container">
+            <canvas id="time-canvas" width="400" height="400"></canvas>
+        </div>
+
+        <h1><div id="current-time"></div></h1>
+
+        <h:form>
+            <h:commandButton styleClass="Button" value="Переход к основной странице" action="main?faces-redirect=true"/>
+        </h:form>
+
+    </div>
+
+    <h:outputScript library="js" name="welcome.js"/>
+    <h:outputScript library="js" name="init-clock.js"/>
+
+</h:body>
+</html>

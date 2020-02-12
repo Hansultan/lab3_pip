@@ -1,0 +1,271 @@
+.absolute-center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+}
+
+/*=====================================================*/
+/*это чисто для имени и варианта*/
+#header{
+    height: 50px;
+    font-family: sans-serif !important;
+    color: black !important;
+    font-size: 20px;
+    text-align: center;
+}
+
+.header-content{
+    width: 250px;
+    line-height: 50px;
+    text-align: center;
+}
+
+/*=====================================================*/
+/*это для канваса и параметров, типо слево канвас , справо параметры */
+#workspace-container{
+    vertical-align: top;
+}
+
+.workspace-item-container{
+    display: inline-block;
+    width: calc(50% - 50px);
+    vertical-align: top;
+    margin: 30px 10px 10px 10px ;
+}
+
+/*=====================================================*/
+/*вот тут я тоже кстати не помню зачем это , это осталось еще с первой лабы*/
+.horisontal-centering-container{
+    text-align: center;
+}
+
+/*=====================================================*/
+/*ну тут из названия можно понять что это для параметров формы*/
+.parameter-form-container{
+    padding: 10px 10px 0px 10px;
+    border: 5px outset #333;
+    border-radius: 8px;
+
+    -webkit-border: 5px outset #333;
+    -moz-border: 5px outset #333;
+    -ms-border: 5px outset #333;
+    -o-border: 5px outset #333;
+    border: 5px outset #333;
+}
+
+.parameter-container{
+    margin-bottom: 10px;
+    padding: 2px 2px 2px 2px;
+    text-align: center;
+}
+
+.parameter-label{
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 auto 1% auto;
+    padding: 0px 8px 8px 8px;
+
+}
+
+/*=====================================================*/
+/*это для если можетбыть неправильно ввести параметры в форме*/
+.warning-container{
+    display: block;
+    font-size: 16px;
+    color: red;
+    padding-top: 10px;
+}
+
+/*=====================================================*/
+/*тут типо кнопки для смены темы и для кнопки навигации*/
+.Button{
+    background: -moz-linear-gradient(#00BBD6, #EBFFFF);
+    background: -webkit-linear-gradient(#00BBD6, #EBFFFF);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 3px solid black;
+    width: 350px;
+    height: 50px;
+    margin: 5px 335px 10px 335px;
+    text-align: center;
+    font: 16pt sans-serif;
+    color: black;
+}
+
+/*=====================================================*/
+/*чисто стиль для кнопки чек*/
+.submit-button{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+    background-color: grey;
+    border: 3px outset black;
+    border-radius: 8px;
+    margin: 0px 6px 20px 6px;
+}
+
+.submit-button:hover{
+    background-color: black;
+    color: white;
+    border: 3px outset white;
+    transition: 0.3s;
+}
+
+/*=====================================================*/
+/*это для текстовой хрени в форме*/
+input[type="text"]{
+    background: -moz-linear-gradient(#00BBD6, #EBFFFF);
+    background: -webkit-linear-gradient(#00BBD6, #EBFFFF);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 3px solid black;
+    width: 130px;
+    height: 25px;
+    font-size: 15px;
+    color: black;
+    text-align: left;
+}
+
+
+/*=====================================================*/
+/*я честно не помню для чего это но видимо это нужно*/
+table {
+    width: 75%;
+    border: 3px solid black;
+    margin-bottom: 10px;
+}
+.centered {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font: 16pt sans-serif;
+}
+
+/*=====================================================*/
+/*это для фона и основа для всего*/
+body{
+
+    background: #242529;
+    background: radial-gradient(#777E84, #242529);
+    background: -webkit-radial-gradient(#777E84, #242529);
+    background: -moz-radial-gradient(#777E84, #242529);
+    background: -ms-radial-gradient(#777E84, #242529);
+    background: -o-radial-gradient(#777E84, #242529);
+    background-attachment: fixed;
+    margin: 0;
+
+}
+
+body > div{
+    width: 1030px;
+    max-width: 1200px;
+    min-width: 300px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    background: #96c8fa;
+    background: -webkit-radial-gradient(circle at center, #96c8fa, #64c8fa);
+    background: -moz-radial-gradient(circle at center, #96c8fa, #64c8fa);
+    background: -ms-radial-gradient(circle at center, #96c8fa, #64c8fa);
+    background: -o-radial-gradient(circle at center, #96c8fa, #64c8fa);
+    background: radial-gradient(circle at center, #96c8fa, #64c8fa);
+
+    border: 15px outset #333;
+    border-radius: 8px;
+
+    -webkit-border: 15px outset #333;
+    -moz-border: 15px outset #333;
+    -ms-border: 15px outset #333;
+    -o-border: 15px outset #333;
+}
+
+div span{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: sans-serif;
+    color: black;
+}
+
+div h1{
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+    font-size: 30px;
+    font-style: italic;
+}
+
+h1, label{
+    font-family: sans-serif;
+    color: black;
+}
+
+/*=====================================================*/
+/*это для результатов типо таблицы с блэкжеком и шлюхами*/
+.result-table{
+    display: inline-table;
+    border-collapse: collapse;
+    font-family: sans-serif ;
+    color: black;
+    font-size: 18px;
+    margin: 10px 83px 25px 83px;
+}
+
+.result-table th,
+.result-table td{
+    display: table-cell;
+    text-align: left;
+    border: none;
+    border: 2px solid black;
+    vertical-align: middle;
+    padding: 5px 10px;
+    min-width: 150px;
+    text-align: center;
+}
+
+.hidden{
+    display: none;
+}
+
+/*=====================================================*/
+/*стиль для часов и картинки*/
+#time-canvas{
+    margin: 50px 75px 30px 50px;
+    border: 5px outset #333;
+    border-radius: 5px;
+
+    -webkit-border: 5px outset #333;
+    -moz-border: 5px outset #333;
+    -ms-border: 5px outset #333;
+    -o-border: 5px outset #333;
+}
+
+.img{
+    height: 400px;
+    width: 400px;
+    margin: 50px 50px 30px 75px;
+    border: 5px outset #333;
+    border-radius: 5px;
+
+    -webkit-border: 5px outset #333;
+    -moz-border: 5px outset #333;
+    -ms-border: 5px outset #333;
+    -o-border: 5px outset #333;
+}
+
+/*=====================================================*/
+/*радио-батон*/
+.radio-buttons{width: 100%;}
+.radio-buttons td label{font-size: 12px;width: 15px;}
+.radio-buttons td input{float:left;}
+[type="radio"]:checked,[type="radio"]:not(:checked) {position: absolute;left: -9999px;}
+[type="radio"]:checked + label, [type="radio"]:not(:checked) + label{position: relative;padding-left: 28px;cursor: pointer;line-height: 20px;display: inline-block;color: black;}
+[type="radio"]:checked + label:before, [type="radio"]:not(:checked) + label:before {content: '';position: absolute;left: 2px;top: 2px;width: 13px;height: 13px;border: 1px solid #ddd;border-radius: 100%;background: #fff;}
+[type="radio"]:checked + label:after, [type="radio"]:not(:checked) + label:after {content: '';width: 13px;height: 13px;background: #00BBD6;position: absolute;top: 3px;left: 3px;border-radius: 100%;-webkit-transition: all 0.2s ease;transition: all 0.2s ease;}
+[type="radio"]:not(:checked) + label:after {opacity: 0;-webkit-transform: scale(0);transform: scale(0);}
+[type="radio"]:checked + label:after {opacity: 1;-webkit-transform: scale(1);transform: scale(1);}
